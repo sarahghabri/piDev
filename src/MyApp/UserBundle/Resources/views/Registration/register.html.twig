@@ -1,10 +1,7 @@
-{% extends "MyAppUserBundle::layoutRegister.html.twig" %}
-{% block regiter_redirect %}
-    
-{% extends "FOSUserBundle::layoutRegister.html.twig" %}
 
+{% extends "FOSUserBundle::layoutRegister.html.twig" %}
+  {% block Register %}
 {% block fos_user_content %}
 {% include "FOSUserBundle:Registration:register_content.html.twig" %}
 {% endblock fos_user_content %}
-
-{% endblock regiter_redirect %} 
+  {% endblock Register %}  

@@ -24,7 +24,7 @@
 			<div class="container">
 				<div class="top-header-left">
 					<ul>
-						<li><a href="myaccount.html">My Account</a></li>
+						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/profile/">My Account</a></li>
 						<li><a href="checkout.html">Checkout</a></li>
 						<div class="clearfix"> </div>
 					</ul>
@@ -40,8 +40,8 @@
 								<input type="submit" value="" />
 							</form>
 						</li>
-						<li><a href="login.html">Login</a></li>
-						<li class="active"><a href="register.html">Register</a></li>
+						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/login">Login</a></li>
+						<li class="active"><a href="http://localhost/WorkShopFOS/web/app_dev.php/register/">Register</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -83,16 +83,15 @@
 	<div class="content">
 	<div class="main">
 	   <div class="container">
+               
              <div class="register">
-		{% block regiter_redirect %}{% endblock %}  	
-	      <div class="clearfix"> </div>
-				<div class="register-but">
+		  
+                
+	     
 				
-           {% block fos_user_content %}
-           {% endblock fos_user_content %}
+                 {% block fos_user_content %}
+                 {% endblock fos_user_content %}
 
-
-				</div>
 		   </div>
 	     </div>
 	    </div>

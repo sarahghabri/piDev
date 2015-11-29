@@ -60,7 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"top-header-left\">
 \t\t\t\t\t<ul>
-\t\t\t\t\t\t<li><a href=\"myaccount.html\">My Account</a></li>
+\t\t\t\t\t\t<li><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/profile/\">My Account</a></li>
 \t\t\t\t\t\t<li><a href=\"checkout.html\">Checkout</a></li>
 \t\t\t\t\t\t<div class=\"clearfix\"> </div>
 \t\t\t\t\t</ul>
@@ -76,8 +76,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 \t\t\t\t\t\t\t\t<input type=\"submit\" value=\"\" />
 \t\t\t\t\t\t\t</form>
 \t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"active\"><a href=\"login.html\">Login</a></li>
-\t\t\t\t\t\t<li><a href=\"register.html\">Register</a></li>
+\t\t\t\t\t\t<li class=\"active\"><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/login\">Login</a></li>
+\t\t\t\t\t\t<li><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/register/\">Register</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"clearfix\"> </div>
@@ -126,10 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 \t\t\t   <div class=\"col-md-6 login-left wow fadeInLeft\" data-wow-delay=\"0.4s\">
 \t\t\t  \t <h3>NEW CUSTOMERS</h3>
 \t\t\t\t <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-\t\t\t\t <a class=\"acount-btn\"  href=\"";
-        // line 96
-        echo $this->env->getExtension('routing')->getPath("my_app_user_layoutRegister");
-        echo "\">Create an Account</a>
+\t\t\t\t <a class=\"acount-btn\"  href=\"http://localhost/WorkShopFOS/web/app_dev.php/register/\">Create an Account</a>
 \t\t\t   </div>
 \t\t\t   <div class=\"col-md-6 login-right wow fadeInRight\" data-wow-delay=\"0.4s\">
 \t\t\t  \t ";
@@ -219,7 +216,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     public function getDebugInfo()
     {
-        return array (  207 => 100,  204 => 99,  178 => 135,  171 => 131,  139 => 101,  137 => 99,  131 => 96,  114 => 82,  50 => 21,  42 => 16,  37 => 14,  32 => 12,  20 => 2,);
+        return array (  204 => 100,  201 => 99,  175 => 135,  168 => 131,  136 => 101,  134 => 99,  114 => 82,  50 => 21,  42 => 16,  37 => 14,  32 => 12,  20 => 2,);
     }
 }
 /* {# empty Twig template #}*/
@@ -254,7 +251,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /* 			<div class="container">*/
 /* 				<div class="top-header-left">*/
 /* 					<ul>*/
-/* 						<li><a href="myaccount.html">My Account</a></li>*/
+/* 						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/profile/">My Account</a></li>*/
 /* 						<li><a href="checkout.html">Checkout</a></li>*/
 /* 						<div class="clearfix"> </div>*/
 /* 					</ul>*/
@@ -270,8 +267,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /* 								<input type="submit" value="" />*/
 /* 							</form>*/
 /* 						</li>*/
-/* 						<li class="active"><a href="login.html">Login</a></li>*/
-/* 						<li><a href="register.html">Register</a></li>*/
+/* 						<li class="active"><a href="http://localhost/WorkShopFOS/web/app_dev.php/login">Login</a></li>*/
+/* 						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/register/">Register</a></li>*/
 /* 					</ul>*/
 /* 				</div>*/
 /* 				<div class="clearfix"> </div>*/
@@ -317,7 +314,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /* 			   <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">*/
 /* 			  	 <h3>NEW CUSTOMERS</h3>*/
 /* 				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>*/
-/* 				 <a class="acount-btn"  href="{{ path('my_app_user_layoutRegister') }}">Create an Account</a>*/
+/* 				 <a class="acount-btn"  href="http://localhost/WorkShopFOS/web/app_dev.php/register/">Create an Account</a>*/
 /* 			   </div>*/
 /* 			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">*/
 /* 			  	 {% block fos_user_content %}*/

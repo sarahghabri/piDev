@@ -7,9 +7,10 @@ class __TwigTemplate_b4289efcd4eb94628ff9f3fa8664586c4be8c1a42da249d4ae8f9250337
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("FOSUserBundle::layoutRegister.html.twig", "FOSUserBundle:Registration:register.html.twig", 1);
+        // line 2
+        $this->parent = $this->loadTemplate("FOSUserBundle::layoutRegister.html.twig", "FOSUserBundle:Registration:register.html.twig", 2);
         $this->blocks = array(
+            'Register' => array($this, 'block_Register'),
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
     }
@@ -25,10 +26,19 @@ class __TwigTemplate_b4289efcd4eb94628ff9f3fa8664586c4be8c1a42da249d4ae8f9250337
     }
 
     // line 3
-    public function block_fos_user_content($context, array $blocks = array())
+    public function block_Register($context, array $blocks = array())
     {
         // line 4
-        $this->loadTemplate("FOSUserBundle:Registration:register_content.html.twig", "FOSUserBundle:Registration:register.html.twig", 4)->display($context);
+        $this->displayBlock('fos_user_content', $context, $blocks);
+        // line 7
+        echo "  ";
+    }
+
+    // line 4
+    public function block_fos_user_content($context, array $blocks = array())
+    {
+        // line 5
+        $this->loadTemplate("FOSUserBundle:Registration:register_content.html.twig", "FOSUserBundle:Registration:register.html.twig", 5)->display($context);
     }
 
     public function getTemplateName()
@@ -43,12 +53,14 @@ class __TwigTemplate_b4289efcd4eb94628ff9f3fa8664586c4be8c1a42da249d4ae8f9250337
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,  11 => 1,);
+        return array (  41 => 5,  38 => 4,  34 => 7,  32 => 4,  29 => 3,  11 => 2,);
     }
 }
-/* {% extends "FOSUserBundle::layoutRegister.html.twig" %}*/
 /* */
+/* {% extends "FOSUserBundle::layoutRegister.html.twig" %}*/
+/*   {% block Register %}*/
 /* {% block fos_user_content %}*/
 /* {% include "FOSUserBundle:Registration:register_content.html.twig" %}*/
 /* {% endblock fos_user_content %}*/
+/*   {% endblock Register %}  */
 /* */

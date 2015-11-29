@@ -1,6 +1,6 @@
 <?php
 
-/* MyAppUserBundle::layoutRegister.html.twig */
+/* FOSUserBundle::layoutRegister.html.twig */
 class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f102c325 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -10,7 +10,6 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
         $this->parent = false;
 
         $this->blocks = array(
-            'regiter_redirect' => array($this, 'block_regiter_redirect'),
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
     }
@@ -56,7 +55,7 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 \t\t\t<div class=\"container\">
 \t\t\t\t<div class=\"top-header-left\">
 \t\t\t\t\t<ul>
-\t\t\t\t\t\t<li><a href=\"myaccount.html\">My Account</a></li>
+\t\t\t\t\t\t<li><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/profile/\">My Account</a></li>
 \t\t\t\t\t\t<li><a href=\"checkout.html\">Checkout</a></li>
 \t\t\t\t\t\t<div class=\"clearfix\"> </div>
 \t\t\t\t\t</ul>
@@ -72,8 +71,8 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 \t\t\t\t\t\t\t\t<input type=\"submit\" value=\"\" />
 \t\t\t\t\t\t\t</form>
 \t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li><a href=\"login.html\">Login</a></li>
-\t\t\t\t\t\t<li class=\"active\"><a href=\"register.html\">Register</a></li>
+\t\t\t\t\t\t<li><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/login\">Login</a></li>
+\t\t\t\t\t\t<li class=\"active\"><a href=\"http://localhost/WorkShopFOS/web/app_dev.php/register/\">Register</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"clearfix\"> </div>
@@ -118,21 +117,17 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 \t<div class=\"content\">
 \t<div class=\"main\">
 \t   <div class=\"container\">
+               
              <div class=\"register\">
-\t\t";
-        // line 87
-        $this->displayBlock('regiter_redirect', $context, $blocks);
-        echo "  \t
-\t      <div class=\"clearfix\"> </div>
-\t\t\t\t<div class=\"register-but\">
+\t\t  
+                
+\t     
 \t\t\t\t
-           ";
-        // line 91
+                 ";
+        // line 92
         $this->displayBlock('fos_user_content', $context, $blocks);
-        // line 93
+        // line 94
         echo "
-
-\t\t\t\t</div>
 \t\t   </div>
 \t     </div>
 \t    </div>
@@ -161,14 +156,14 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 \t\t\t\t\t<h4>get social</h4>
 \t\t\t\t\t<div class=\"face-b\">
 \t\t\t\t\t\t<img src=\"";
-        // line 123
+        // line 122
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/foot.png"), "html", null, true);
         echo "\" title=\"name\"/>
 \t\t\t\t\t\t<a href=\"#\"><i class=\"fb\"> </i></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"twet\">\t\t
 \t\t\t\t\t\t<img src=\"";
-        // line 127
+        // line 126
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/foot.png"), "html", null, true);
         echo "\" title=\"name\"/>
 \t\t\t\t\t\t\t<a href=\"#\"><i class=\"twt\"> </i></a>
@@ -194,21 +189,16 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 ";
     }
 
-    // line 87
-    public function block_regiter_redirect($context, array $blocks = array())
-    {
-    }
-
-    // line 91
+    // line 92
     public function block_fos_user_content($context, array $blocks = array())
     {
-        // line 92
-        echo "           ";
+        // line 93
+        echo "                 ";
     }
 
     public function getTemplateName()
     {
-        return "MyAppUserBundle::layoutRegister.html.twig";
+        return "FOSUserBundle::layoutRegister.html.twig";
     }
 
     public function isTraitable()
@@ -218,7 +208,7 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 
     public function getDebugInfo()
     {
-        return array (  206 => 92,  203 => 91,  198 => 87,  172 => 127,  165 => 123,  133 => 93,  131 => 91,  124 => 87,  110 => 76,  46 => 15,  38 => 10,  33 => 8,  28 => 6,  21 => 1,);
+        return array (  196 => 93,  193 => 92,  167 => 126,  160 => 122,  130 => 94,  128 => 92,  109 => 76,  45 => 15,  37 => 10,  32 => 8,  27 => 6,  20 => 1,);
     }
 }
 /* */
@@ -247,7 +237,7 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 /* 			<div class="container">*/
 /* 				<div class="top-header-left">*/
 /* 					<ul>*/
-/* 						<li><a href="myaccount.html">My Account</a></li>*/
+/* 						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/profile/">My Account</a></li>*/
 /* 						<li><a href="checkout.html">Checkout</a></li>*/
 /* 						<div class="clearfix"> </div>*/
 /* 					</ul>*/
@@ -263,8 +253,8 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 /* 								<input type="submit" value="" />*/
 /* 							</form>*/
 /* 						</li>*/
-/* 						<li><a href="login.html">Login</a></li>*/
-/* 						<li class="active"><a href="register.html">Register</a></li>*/
+/* 						<li><a href="http://localhost/WorkShopFOS/web/app_dev.php/login">Login</a></li>*/
+/* 						<li class="active"><a href="http://localhost/WorkShopFOS/web/app_dev.php/register/">Register</a></li>*/
 /* 					</ul>*/
 /* 				</div>*/
 /* 				<div class="clearfix"> </div>*/
@@ -306,16 +296,15 @@ class __TwigTemplate_a1f0ba4325001ba5b0acfcc1c23370abe62be6225a245088086d5852f10
 /* 	<div class="content">*/
 /* 	<div class="main">*/
 /* 	   <div class="container">*/
+/*                */
 /*              <div class="register">*/
-/* 		{% block regiter_redirect %}{% endblock %}  	*/
-/* 	      <div class="clearfix"> </div>*/
-/* 				<div class="register-but">*/
+/* 		  */
+/*                 */
+/* 	     */
 /* 				*/
-/*            {% block fos_user_content %}*/
-/*            {% endblock fos_user_content %}*/
+/*                  {% block fos_user_content %}*/
+/*                  {% endblock fos_user_content %}*/
 /* */
-/* */
-/* 				</div>*/
 /* 		   </div>*/
 /* 	     </div>*/
 /* 	    </div>*/

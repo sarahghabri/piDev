@@ -1,0 +1,76 @@
+ {#
+{{ form(Form) }}  
+   
+ #}
+ 
+<form method="POST">
+<table border="2">
+    <tr> 
+        <td>
+            {{ form_label(Form.nomLivreur) }}
+        </td>   
+         <td>
+           {{ form_widget(Form.nomLivreur) }}
+        </td>
+    </tr>  
+    <tr> 
+        <td>
+            {{ form_label(Form.prenomLivreur) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.prenomLivreur) }}
+        </td>
+     </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.numTelephoneLivreur) }}
+        </td>
+         <td>
+               {{ form_widget(Form.numTelephoneLivreur) }}
+        </td>
+   </tr> 
+    <tr> 
+        <td>
+            {{ form_label(Form.adresseLivreur) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.adresseLivreur) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.emailLivreur) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.emailLivreur) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.etatLivreur) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.etatLivreur) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.patisserie) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.patisserie) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.UPDATE) }}
+        </td>
+         <td>
+           {{ form_widget(Form.UPDATE) }}
+    
+         
+        </td>
+    </tr>  
+    
+</table> 
+   </form>  

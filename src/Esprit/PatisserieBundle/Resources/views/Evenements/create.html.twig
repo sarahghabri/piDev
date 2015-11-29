@@ -1,0 +1,56 @@
+{# empty Twig template #}
+  <form method="POST">
+<table border="2">
+    
+    <tr> 
+        <td>
+            {{ form_label(Form.nomEvent) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.nomEvent) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.dateEvent) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.dateEvent) }}
+        </td>
+    </tr>
+   
+    <tr> 
+        <td>
+            {{ form_label(Form.localEvent) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.localEvent) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.themeEvent) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.themeEvent) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.idResponsable) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.idResponsable) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.CREATE) }}
+        </td>
+         <td>
+               {{ form_widget(Form.CREATE) }}
+        </td>
+    </tr>  
+    
+</table> 
+    </form>

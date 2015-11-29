@@ -1,0 +1,94 @@
+esprit_patisserie_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: EspritPatisserieBundle:Default:index }
+
+#*************************Livreur**************************************#
+    
+sweettaha_read_Livreur:
+    path:     /listLivreur
+    defaults: { _controller: EspritPatisserieBundle:Livreur:read }    
+    
+sweettaha_create_Livreur:
+    path:     /addLivreur
+    defaults: { _controller: EspritPatisserieBundle:Livreur:create }   
+    
+sweettaha_delete_Livreur:
+    path:     /deleteLivreur/{id}
+    defaults: { _controller: EspritPatisserieBundle:Livreur:delete }    
+    
+sweettaha_update_Livreur:
+    path:     /updateLivreur/{id}
+    defaults: { _controller: EspritPatisserieBundle:Livreur:update }     
+#*************************Livraison****************#    
+    
+sweettaha_read_Livraison:
+    path:     /listLivraison
+    defaults: { _controller: EspritPatisserieBundle:Livraison:read }    
+    
+sweettaha_create_Livraison:
+    path:     /addLivraison
+    defaults: { _controller: EspritPatisserieBundle:Livraison:create }   
+    
+sweettaha_delete_Livraison:
+    path:     /deleteLivraison/{id}
+    defaults: { _controller: EspritPatisserieBundle:Livraison:delete }    
+    
+sweettaha_update_Livraison:
+    path:     /updateLivraison/{id}
+    defaults: { _controller: EspritPatisserieBundle:Livraison:update }  
+    
+#*************************Promotion****************#    
+    
+sweettaha_read_Promotion:
+    path:     /listPromotion
+    defaults: { _controller: EspritPatisserieBundle:Promotion:read }    
+    
+sweettaha_create_Promotion:
+    path:     /addPromotion
+    defaults: { _controller: EspritPatisserieBundle:Promotion:create }   
+    
+sweettaha_delete_Promotion:
+    path:     /deletePromotion/{id}
+    defaults: { _controller: EspritPatisserieBundle:Promotion:delete }    
+    
+sweettaha_update_Promotion:
+    path:     /updatePromotion/{id}
+    defaults: { _controller: EspritPatisserieBundle:Promotion:update }      
+#*************************Evenements****************#    
+    
+sweettaha_read_Evenements:
+    path:     /listEvenements
+    defaults: { _controller: EspritPatisserieBundle:Evenements:read }    
+    
+sweettaha_create_Evenements:
+    path:     /addEvenements
+    defaults: { _controller: EspritPatisserieBundle:Evenements:create }   
+    
+sweettaha_delete_Evenements:
+    path:     /deleteEvenements/{id}
+    defaults: { _controller: EspritPatisserieBundle:Evenements:delete }    
+    
+sweettaha_update_Evenements:
+    path:     /updateEvenements/{id}
+    defaults: { _controller: EspritPatisserieBundle:Evenements:update }       
+  #*********************************************************#
+
+    
+fos_user_security:
+   resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+   resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+   prefix: /profile
+
+fos_user_register:
+   resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+   prefix: /register
+
+fos_user_resetting:
+   resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+   prefix: /resetting
+
+fos_user_change_password:
+   resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+   prefix: /profile

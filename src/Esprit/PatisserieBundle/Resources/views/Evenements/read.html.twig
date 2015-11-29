@@ -1,0 +1,37 @@
+{# empty Twig template #}
+<h1>Liste des Evenements</h1>
+<form method="POST">
+<table border ="2">
+    <tr>
+        <th>id</th>
+        <th>nom</th>
+        <th> date_event</th>
+        <th> local </th>
+        <th> theme</th>
+        <th> Responsable </th>
+       
+        
+        <th colspan="2">Option</th>
+
+     
+    </tr>
+   {% for l in Evenements  %}
+     <tr>
+         <td>{{ l.idEvent  }} </td>
+        <td>{{ l.nomEvent  }} </td>
+        <td>{{l.dateEvent|date("m/d/Y") }}</td>
+        <td> {{l.localEvent  }}</td>
+        <td> {{l.themeEvent  }}</td>
+        <td> {{l.idResponsable  }}</td>
+      
+       
+        
+        <td><a href="{{ path('sweettaha_delete_Evenements',{'id': l.idEvent}) }}" >DELETE</a> </td>
+        <td><a href="{{ path('sweettaha_update_Evenements',{'id': l.idEvent}) }}" >UPDATE</a> </td>
+        
+     </tr> 
+   
+    {% endfor %}    
+   <tr><td align="center" colspan="8"><a href="{{ path('sweettaha_create_Evenements') }}" >Ajouter un evenement </a></td></tr>
+</table> 
+</form>

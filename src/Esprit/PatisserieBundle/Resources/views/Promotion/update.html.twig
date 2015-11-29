@@ -1,0 +1,61 @@
+ {#
+{{ form(Form) }}  
+   
+ #}
+ 
+<form method="POST">
+<table border="2">
+   <tr> 
+        <td>
+            {{ form_label(Form.dateDebPromo) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.dateDebPromo) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.dateFinPromo) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.dateFinPromo) }}
+        </td>
+    </tr>
+   
+    <tr> 
+        <td>
+            {{ form_label(Form.nomPromo) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.nomPromo) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.idResponsable) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.idResponsable) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.idPatisserie) }}
+        </td>   
+         <td>
+               {{ form_widget(Form.idPatisserie) }}
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            {{ form_label(Form.UPDATE) }}
+        </td>
+         <td>
+           {{ form_widget(Form.UPDATE) }}
+    
+         
+        </td>
+    </tr>  
+    
+</table> 
+   </form>  

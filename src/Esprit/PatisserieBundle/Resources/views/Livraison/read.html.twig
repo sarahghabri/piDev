@@ -1,0 +1,27 @@
+{# empty Twig template #}
+                                     
+<h1>Liste des Livraison</h1>
+
+<table border ="2">
+    <tr>
+        <th>id</th>
+        <th>type</th>
+        
+        <th colspan="2">Option</th>
+
+     
+    </tr>
+   {% for l in liv  %}
+     <tr>
+        <td>{{ l.id  }} </td>
+        <td>{{ l.type}} </td>
+        
+        <td><a href="{{ path('sweettaha_delete_Livraison',{'id': l.id}) }}" >DELETE</a> </td>
+        <td><a href="{{ path('sweettaha_update_Livraison',{'id': l.id}) }}" >UPDATE</a> </td>
+        
+     </tr> 
+   
+    {% endfor %}    
+   <tr><td align="center" colspan="4"><a href="{{ path('sweettaha_create_Livraison') }}" >Ajouter une livraison </a></td></tr>
+</table>   
+

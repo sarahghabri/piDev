@@ -1,0 +1,38 @@
+{# empty Twig template #}
+
+<h1>Liste des Livreur</h1>
+<form method="POST">
+<table border ="2">
+    <tr>
+        <th>id_livreur</th>
+        <th>nom_livreur</th>
+        <th>prenom_livreur</th>
+        <th>num_telephone_livreur</th>
+        <th>adresse_livreur</th>
+        <th>email_livreur</th>
+        <th>etat_livreur</th>
+        <th>NOM_patisserie</th>
+        <th colspan="2">Option</th>
+
+     
+    </tr>
+   {% for l in liv  %}
+     <tr>
+        <td>{{ l.idLivreur  }} </td>
+        <td>{{ l.nomLivreur}} </td>
+        <td>{{ l.prenomLivreur    }} </td>
+        <td>{{ l.numTelephoneLivreur     }} </td>
+        <td>{{ l.adresseLivreur }} </td>
+        <td>{{ l.emailLivreur    }} </td>
+        <td>{{ l.etatLivreur   }} </td>
+        <td>{# l.patisserie.nomPatisserie #} </td>
+        <td><a href="{{ path('sweettaha_delete_Livreur',{'id': l.idLivreur}) }}" >DELETE</a> </td>
+        <td><a href="{{ path('sweettaha_update_Livreur',{'id': l.idLivreur}) }}" >UPDATE</a> </td>
+        
+     </tr> 
+   
+    {% endfor %}    
+   <tr><td align="center" colspan="10"><a href="{{ path('sweettaha_create_Livreur') }}" >CREATE A NEW </a></td></tr>
+</table>   
+</form>
+ 

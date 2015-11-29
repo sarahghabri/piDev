@@ -1,0 +1,33 @@
+{# empty Twig template #}
+<h1>Liste des Promotion</h1>
+<form method="POST">
+<table border ="2">
+    <tr>
+        <th>id</th>
+        <th>nom</th>
+        <th> date_deb_promo</th>
+        <th> date_fin_promo </th>
+       
+        
+        <th colspan="2">Option</th>
+
+     
+    </tr>
+   {% for l in Promotion  %}
+     <tr>
+        <td>{{ l.idPromo  }} </td>
+        <th>{{l.nomPromo }}</th>
+        <th> {{l.dateDebPromo|date("m/d/Y")  }}</th>
+        <th> {{l.dateFinPromo|date("m/d/Y")  }}</th>
+      
+       
+        
+        <td><a href="{{ path('sweettaha_delete_Promotion',{'id': l.idPromo}) }}" >DELETE</a> </td>
+        <td><a href="{{ path('sweettaha_update_Promotion',{'id': l.idPromo}) }}" >UPDATE</a> </td>
+        
+     </tr> 
+   
+    {% endfor %}    
+   <tr><td align="center" colspan="6"><a href="{{ path('sweettaha_create_Promotion') }}" >Ajouter une promotion </a></td></tr>
+</table> 
+</form>
